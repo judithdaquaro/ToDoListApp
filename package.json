@@ -1,0 +1,20 @@
+{
+  "name": "todolistapp",
+  "version": "1.0.0",
+  "description": "lista de tareas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/judithdaquaro/ToDoListApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/judithdaquaro/ToDoListApp/issues"
+  },
+  "homepage": "https://github.com/judithdaquaro/ToDoListApp#readme"
+}

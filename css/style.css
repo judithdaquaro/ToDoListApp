@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.Header{
+    width:100%;
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+   
+}
+.Header h1{
+    position: absolute;
+    left: 700px;
+    font-size: 36px;
+}
+.Header__menu{
+    width: 608px;
+    height: auto;
+    margin-top: 58px;
+    border-bottom:  1px solid #BDBDBD; 
+}
+.Header__menu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Header__menu li{
+    list-style: none;
+    width: 89px;
+    height: 32px;
+    text-align: center;
+    
+}
+.Header__menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    height: 56px;
+    width: 476px;
+    border-radius: 12px;
+    border: 1px solid #BDBDBD;
+    margin-right:24px;
+}
+button{
+    height: 56px;
+    width: 109px;
+    border-radius: 12px;
+    background-color:  #2F80ED;
+    border: unset;
+    color: #FFFFFF;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.1s all ease-in;
+}
+button:active{
+    transform: scale(0.8);
+}
+.contaiener{
+    width: 608px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+
+}
+.contaiener input{
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
+    border: 1px solid #828282;
+    background-color: white;
+}
+
+.contaiener label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-color: #BDBDBD;
+    margin-bottom: 29px;
+}
+.contaiener span{
+    margin-left: 7px;
+ 
+}
+
+.checkActive{
+    text-decoration: line-through;
+}
+.liActive{
+    border-bottom: #2F80ED 2px solid;
+}
+.btnDeleted{
+    position: absolute;
+    height: 40px;
+    width: 124px;
+    left: 900px;
+    top: 333px;
+    border-radius: 4px;
+    background-color:  #EB5757;
+}
