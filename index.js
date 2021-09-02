@@ -30,31 +30,6 @@ let template = ()=>{
     return view;
 }
 
-
-
-/*$botton.addEventListener('click', () => {
-    const node = document.createElement('label');
-    const check = document.createElement('input');
-    const span = document.createElement('span');
-    check.className ='checkbox';
-    span.innerHTML = $input.value;
-    span.className = 'text';
-    node.setAttribute('value', value );
-    value = value + 1;
-    node.appendChild(check);
-    node.append(span);
-    check.type="checkbox";
-    $content.appendChild(node);
-
-    todo.push(node);
-
-
-    for (let i = 0; i < $content.children.length; i++) {
-        $content.children[i].addEventListener('click', click);
-    }  
-   
-
-}) */
 function add() {
     debugger;
     const node = document.createElement('label');
@@ -110,26 +85,10 @@ function router (){
 
     if(valor == '1'){
         remove(valor);
-        debugger;
-        if(form !== null){
-            reset(1); 
-        }
-        
-        for (const element in completeTodo) {
-            if (completeTodo.length > 0) {
-                $content.appendChild(completeTodo[element]);
-            }
-        }
-        for (const key in todo) {
-            if (todo.length > 0) {
-                $content.appendChild(todo[key]);
-            }
-        }
-        all=$content;
+        allOption();
     }
     if(valor == '2'){
         remove(valor);
-        debugger;
         if(form !== null){
             reset(2);
         }
@@ -189,3 +148,24 @@ function empty() {
     $main.innerHTML = complete();
     //$main.innerHTML = complete();
 };
+
+function allOption() {
+   ul.children[0].classList.add('liActive');
+    debugger;
+    if(form !== null){
+        reset(1); 
+    }
+    
+    for (const element in completeTodo) {
+        if (completeTodo.length > 0) {
+            $content.appendChild(completeTodo[element]);
+        }
+    }
+    for (const key in todo) {
+        if (todo.length > 0) {
+            $content.appendChild(todo[key]);
+        }
+    }
+    all=$content
+}
+window.addEventListener('load', allOption);
