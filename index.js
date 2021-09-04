@@ -54,6 +54,7 @@ function add() {
         $content.children[i].addEventListener('click', click);
     }  
 }
+debugger;
 
 function click() { 
     this.classList.toggle('checkActive');
