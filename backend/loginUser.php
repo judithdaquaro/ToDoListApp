@@ -23,7 +23,7 @@ if (isset($_POST)) {
         }
 
     } else {
-        $_SESSION['err_login'] = "Login Incorrecto";
+        $_SESSION['err_login'] = "Login Incorrecto o inexistente. Chequee sus datos o regístrese";
     }
 }
 header('Location: ../index.php');
